@@ -32,6 +32,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/zepto.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/doit.js"></script>
         <script>
          function onLoad(){
               document.addEventListener("deviceready", onDeviceReady, true);
@@ -40,6 +41,7 @@
               navigator.notification.alert("PhoneGap is working!!");
          }
          $('#silly').click(function() {
+            navigator.notification.alert("RAJA");
             SILLY.DoIt($('#result'));
          });
          $('#clear').click(function() {
